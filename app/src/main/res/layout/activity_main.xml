@@ -6,46 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_1"
         android:id="@+id/text_view_1"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View 1" />
-
-    <TextView
-        android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@id/text_view_1"
-        app:layout_constraintBottom_toTopOf="@id/text_view_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 2" />
-
-    <TextView
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@id/text_view_1"
-        app:layout_constraintBottom_toTopOf="@id/text_view_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 3" />
-
-    <TextView
-        android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@id/text_view_1"
-        app:layout_constraintTop_toBottomOf="@id/text_view_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 4" />
-
-    <TextView
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@id/text_view_1"
-        app:layout_constraintTop_toBottomOf="@id/text_view_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
