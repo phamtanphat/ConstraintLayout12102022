@@ -6,14 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
+    <TextView
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@id/text_view_b"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintDimensionRatio="875:1920"
-        android:src="@drawable/image_1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text_view_a"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="10dp"
+        android:textColor="#ffffff"
+        android:background="#f20"
+        android:text="A"
+        app:layout_constraintHorizontal_weight="1"
         android:layout_width="0dp"
-        android:layout_height="200dp"/>
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintEnd_toStartOf="@id/text_view_c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_view_a"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text_view_b"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="10dp"
+        android:textColor="#ffffff"
+        android:background="#2757E8"
+        android:text="B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_view_b"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text_view_c"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="10dp"
+        android:textColor="#ffffff"
+        android:background="#89E3B9"
+        android:text="C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
